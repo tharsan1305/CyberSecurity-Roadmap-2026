@@ -143,6 +143,238 @@ A DNS record that aliases one domain name to another.
 
 ---
 
+
+
+# Day 02 - Web Basics (HTTP, HTTPS, DNS, Browser)
+
+## Introduction
+
+The web allows users to access websites and services over the internet. Understanding how browsers, DNS, HTTP, and HTTPS work is fundamental for networking, cybersecurity, cloud computing, and web application security.
+
+---
+
+# HTTP (HyperText Transfer Protocol)
+
+HTTP is the protocol used for communication between a browser (client) and a web server.
+
+Example:
+
+Browser → Request → Server
+
+Server → Response → Browser
+
+## HTTP Request Methods
+
+### GET
+
+Used to retrieve data.
+
+Example:
+
+GET /index.html
+
+### POST
+
+Used to send data to a server.
+
+Example:
+
+POST /login
+
+### PUT
+
+Used to update existing data.
+
+### DELETE
+
+Used to delete data.
+
+---
+
+# HTTP Status Codes
+
+## 200 OK
+
+Request successful.
+
+## 301 Moved Permanently
+
+Resource moved to another location.
+
+## 404 Not Found
+
+Requested page does not exist.
+
+## 500 Internal Server Error
+
+Server encountered an error.
+
+---
+
+# HTTPS (HyperText Transfer Protocol Secure)
+
+HTTPS is the secure version of HTTP.
+
+HTTPS uses:
+
+* SSL
+* TLS
+* Digital Certificates
+
+Benefits:
+
+* Encryption
+* Integrity
+* Authentication
+
+Example:
+
+http://example.com
+
+https://example.com
+
+---
+
+# DNS (Domain Name System)
+
+DNS converts domain names into IP addresses.
+
+Example:
+
+google.com
+
+↓
+
+142.250.x.x
+
+Without DNS, users would need to remember IP addresses.
+
+---
+
+# Common DNS Records
+
+## A Record
+
+Maps a domain to an IPv4 address.
+
+## AAAA Record
+
+Maps a domain to an IPv6 address.
+
+## CNAME Record
+
+Creates an alias for another domain.
+
+## MX Record
+
+Used for email routing.
+
+## TXT Record
+
+Stores text information such as SPF records.
+
+---
+
+# DNS Resolution Process
+
+1. User enters google.com
+2. Browser checks cache
+3. OS checks DNS cache
+4. Query sent to DNS resolver
+5. Resolver contacts DNS servers
+6. IP address returned
+7. Browser connects to server
+
+---
+
+# Browser Basics
+
+Popular Browsers:
+
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Edge
+* Brave
+
+---
+
+# Cookies
+
+Cookies store user information.
+
+Examples:
+
+* Login session
+* Preferences
+* Shopping cart data
+
+---
+
+# Sessions
+
+Sessions maintain user state while browsing.
+
+Example:
+
+Login once and continue accessing pages without logging in again.
+
+---
+
+# Cache
+
+Browsers cache files for faster loading.
+
+Benefits:
+
+* Faster websites
+* Reduced bandwidth usage
+
+---
+
+# Browser Developer Tools
+
+Open Developer Tools:
+
+F12
+
+Useful Tabs:
+
+* Elements
+* Console
+* Network
+* Application
+* Security
+
+---
+
+# What Happens When You Visit a Website
+
+1. Enter URL
+2. Browser checks cache
+3. DNS lookup
+4. TCP connection established
+5. TLS handshake (HTTPS)
+6. HTTP request sent
+7. Server processes request
+8. HTTP response received
+9. Browser renders page
+
+---
+
+# Interview Questions
+
+1. What is HTTP?
+2. Difference between HTTP and HTTPS?
+3. What is DNS?
+4. What is an A Record?
+5. What is a Cookie?
+6. What is a Session?
+7. What does a 404 error mean?
+8. What is TLS?
+9. What is browser cache?
+10. Explain DNS resolution process.
+
+
 ## Key Takeaways
 - Understood the HTTP request/response cycle and common methods/status codes
 - Learned how HTTPS secures HTTP using TLS and certificates
